@@ -131,8 +131,7 @@ SwachhataSutra directly supports Target 11.6 — reducing the adverse environmen
 
 **Upadhyay Foram Jignesh**  
 Solo participant | BCA Student at Atmiya University, Rajkot  
-Aspiring Software Architect & Data Engineer  
-🎓 Applying for M.Sc. Computing Sciences at Tampere University, Finland
+
 
 *"I built this because I see this problem every day on the streets of Rajkot. Technology should serve people — and this is my contribution to my country."*
 
