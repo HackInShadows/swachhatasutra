@@ -530,11 +530,11 @@ export default function App() {
           <div style={{ textAlign: "center", marginBottom: "40px" }}>
             <div style={{ fontSize: "40px", marginBottom: "12px" }}>📊</div>
             <h2 style={{ fontSize: "34px", fontWeight: "900", margin: "0 0 8px" }}>
-              Rajkot City Dashboard
-            </h2>
-            <p style={{ color: "rgba(255,255,255,0.5)", margin: 0 }}>
-              Real-time cleanliness intelligence powered by Gemini AI
-            </p>
+  {language === "gu" ? "રાજકોટ સિટી ડેશબોર્ડ" : "Rajkot City Dashboard"}
+</h2>
+<p style={{ color: "rgba(255,255,255,0.5)", margin: 0 }}>
+  {language === "gu" ? "Gemini AI દ્વારા રીઅલ-ટાઇમ સ્વચ્છતા માહિતી" : "Real-time cleanliness intelligence powered by Gemini AI"}
+</p>
           </div>
 
           {/* LEVEL + STREAK CARD */}
@@ -546,7 +546,7 @@ export default function App() {
           }}>
             <div style={{ fontSize: "48px" }}>👤</div>
             <div style={{ flex: 1 }}>
-              <div style={{ fontSize: "13px", color: "rgba(255,255,255,0.5)", marginBottom: "4px" }}>YOUR STATUS</div>
+            <div style={{ fontSize: "13px", color: "rgba(255,255,255,0.5)", marginBottom: "4px" }}>{language === "gu" ? "તમારી સ્થિતિ" : "YOUR STATUS"}</div>
               <div style={{ fontSize: "22px", fontWeight: "800", color: level.color }}>{level.label}</div>
               <div style={{ fontSize: "14px", color: "rgba(255,255,255,0.6)", marginTop: "4px" }}>
                 {totalPoints} points · {reports.length} reports · {streak} day streak 🔥
