@@ -1,6 +1,8 @@
 import { useState, useRef, useEffect } from "react";
 
-const GEMINI_API_KEY = "AIzaSyDbyefGWdOb8F7otEqV6MbqPjOWxTza6cY";
+const GEMINI_API_KEY = import.meta.env.VITE_GEMINI_API_KEY;
+
+import confetti from "canvas-confetti";
 
 const GUJARATI_TRANSLATIONS = {
   "Mixed Solid Waste & Plastic": "મિશ્ર ઘન કચરો અને પ્લાસ્ટિક",
@@ -128,6 +130,7 @@ export default function App() {
       setImage(compressed);
       setImageBase64(compressed.split(",")[1]);
       setResult(null);
+      confetti({ particleCount: 100, spread: 70, origin: { y: 0.6 } });
       setError(null);
     };
     img.src = URL.createObjectURL(file);
